@@ -1,0 +1,217 @@
+Error: Not Found
+    at Request.callback (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\index.js:871:15)
+    at C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\index.js:1114:20
+    at IncomingMessage.<anonymous> (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\parsers\json.js:22:7)    at Stream.emit (events.js:310:20)
+    at Unzip.<anonymous> (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\unzip.js:53:12)
+    at Unzip.emit (events.js:322:22)
+    at endReadableNT (_stream_readable.js:1187:12)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21) {
+  status: 404,
+  response: Response {
+    _events: [Object: null prototype] {},
+    _eventsCount: 0,
+    _maxListeners: undefined,
+    res: IncomingMessage {
+      _readableState: [ReadableState],
+      readable: false,
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      httpVersionMajor: 1,
+      httpVersionMinor: 1,
+      httpVersion: '1.1',
+      complete: true,
+      headers: [Object],
+      rawHeaders: [Array],
+      trailers: {},
+      rawTrailers: [],
+      aborted: false,
+      upgrade: false,
+      url: '',
+      method: null,
+      statusCode: 404,
+      statusMessage: 'Not Found',
+      client: [TLSSocket],
+      _consuming: true,
+      _dumped: false,
+      req: [ClientRequest],
+      setEncoding: [Function],
+      on: [Function],
+      text: '{"status":"error","message":"Breed not found (master breed does not exist)","code":404}',
+      [Symbol(kCapture)]: false
+    },
+    request: Request {
+      _events: [Object: null prototype],
+      _eventsCount: 1,
+      _maxListeners: undefined,
+      _enableHttp2: false,
+      _agent: false,
+      _formData: null,
+      method: 'GET',
+      url: 'https://dog.ceo/api/breed/labrador11/images/random',
+      _header: {},
+      header: {},
+      writable: true,
+      _redirects: 0,
+      _maxRedirects: 5,
+      cookies: '',
+      qs: {},
+      _query: [],
+      qsRaw: [],
+      _redirectList: [],
+      _streamRequest: false,
+      req: [ClientRequest],
+      protocol: 'https:',
+      host: 'dog.ceo',
+      _endCalled: true,
+      _callback: [Function],
+      _fullfilledPromise: [Promise],
+      res: [IncomingMessage],
+      _resBuffered: true,
+      response: [Circular],
+      called: true,
+      [Symbol(kCapture)]: false
+    },
+    req: ClientRequest {
+      _events: [Object: null prototype],
+      _eventsCount: 3,
+      _maxListeners: undefined,
+      outputData: [],
+      outputSize: 0,
+      writable: true,
+      _last: true,
+      chunkedEncoding: false,
+      shouldKeepAlive: false,
+      useChunkedEncodingByDefault: false,
+      sendDate: false,
+      _removedConnection: false,
+      _removedContLen: false,
+      _removedTE: false,
+      _contentLength: 0,
+      _hasBody: true,
+      _trailer: '',
+      finished: true,
+      _headerSent: true,
+      socket: [TLSSocket],
+      connection: [TLSSocket],
+      _header: 'GET /api/breed/labrador11/images/random HTTP/1.1\r\n' +
+        'Host: dog.ceo\r\n' +
+        'Accept-Encoding: gzip, deflate\r\n' +
+        'Connection: close\r\n' +
+        '\r\n',
+      _onPendingData: [Function: noopPendingOutput],
+      agent: [Agent],
+      socketPath: undefined,
+      method: 'GET',
+      insecureHTTPParser: undefined,
+      path: '/api/breed/labrador11/images/random',
+      _ended: true,
+      res: [IncomingMessage],
+      aborted: false,
+      timeoutCb: null,
+      upgradeOrConnect: false,
+      parser: null,
+      maxHeadersCount: null,
+      reusedSocket: false,
+      [Symbol(kCapture)]: false,
+      [Symbol(kNeedDrain)]: false,
+      [Symbol(corked)]: 0,
+      [Symbol(kOutHeaders)]: [Object: null prototype]
+    },
+    text: '{"status":"error","message":"Breed not found (master breed does not exist)","code":404}',
+    body: {
+      status: 'error',
+      message: 'Breed not found (master breed does not exist)',
+      code: 404
+    },
+    files: undefined,
+    buffered: true,
+    headers: {
+      date: 'Fri, 01 May 2020 02:45:05 GMT',
+      'content-type': 'application/json',
+      'transfer-encoding': 'chunked',
+      connection: 'close',
+      'set-cookie': [Array],
+      'x-powered-by': 'PHP/7.3.6',
+      'cache-control': 'no-cache, private',
+      'access-control-allow-origin': '*',
+      via: '1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)',
+      'x-cache-hits': '0',
+      'x-cache': 'MISS',
+      age: '0',
+      vary: '',
+      'cf-cache-status': 'DYNAMIC',
+      'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+      server: 'cloudflare',
+      'cf-ray': '58c62a12c89ffd52-SYD',
+      'content-encoding': 'gzip',
+      'cf-request-id': '026fb89fbf0000fd526bb84200000001'
+    },
+    header: {
+      date: 'Fri, 01 May 2020 02:45:05 GMT',
+      'content-type': 'application/json',
+      'transfer-encoding': 'chunked',
+      connection: 'close',
+      'set-cookie': [Array],
+      'x-powered-by': 'PHP/7.3.6',
+      'cache-control': 'no-cache, private',
+      'access-control-allow-origin': '*',
+      via: '1.1 varnish (Varnish/6.3), 1.1 varnish (Varnish/6.3)',
+      'x-cache-hits': '0',
+      'x-cache': 'MISS',
+      age: '0',
+      vary: '',
+      'cf-cache-status': 'DYNAMIC',
+      'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+      server: 'cloudflare',
+      'cf-ray': '58c62a12c89ffd52-SYD',
+      'content-encoding': 'gzip',
+      'cf-request-id': '026fb89fbf0000fd526bb84200000001'
+    },
+    statusCode: 404,
+    status: 404,
+    statusType: 4,
+    info: false,
+    ok: false,
+    redirect: false,
+    clientError: true,
+    serverError: false,
+    error: Error: cannot GET /api/breed/labrador11/images/random (404)
+        at Response.toError (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\response.js:98:13)
+        at ResponseBase._setStatusProperties (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\response-base.js:119:48)
+        at new Response (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\response.js:44:8)
+        at Request._emitResponse (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\index.js:918:18)       
+        at C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\index.js:1114:42
+        at IncomingMessage.<anonymous> (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\parsers\json.js:22:7)
+        at Stream.emit (events.js:310:20)
+        at Unzip.<anonymous> (C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter\node_modules\superagent\lib\node\unzip.js:53:12)
+        at Unzip.emit (events.js:322:22)
+        at endReadableNT (_stream_readable.js:1187:12) {
+      status: 404,
+      text: '{"status":"error","message":"Breed not found (master breed does not exist)","code":404}',
+      method: 'GET',
+      path: '/api/breed/labrador11/images/random'
+    },
+    created: false,
+    accepted: false,
+    noContent: false,
+    badRequest: false,
+    unauthorized: false,
+    notAcceptable: false,
+    forbidden: false,
+    notFound: true,
+    unprocessableEntity: false,
+    type: 'application/json',
+    links: {},
+    setEncoding: [Function: bound ],
+    redirects: [],
+    pipe: [Function],
+    [Symbol(kCapture)]: false
+  }
+}
+
+C:\Programming\nodejs\complete-node-bootcamp\1-node-farm\starter>node callbackHell.js
+Breed read from file is: labrador11
+Not Found
